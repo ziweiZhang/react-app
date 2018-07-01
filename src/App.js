@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,10 +15,13 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>my code</p>
-        <p>test</p>
+        <p>{true}</p>
+        {this.props.children}
       </div>
     );
   }
 }
-
+App.propType={
+  children: PropTypes.element.isRequired
+};
 export default App;
