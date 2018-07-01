@@ -21,7 +21,7 @@ class TodoList extends Component {
 				},
 				{
 					completed: false,
-					name: 'stady',
+					name: 'study',
 					id: 3
 				},
 				{
